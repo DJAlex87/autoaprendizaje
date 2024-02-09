@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SuperficieCuadrado\bin\Debug\SuperficieCuadrado.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SuperficieCuadrado\bin\Debug\SuperficieCuadrado.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SuperficieCuadrado\bin\Debug\SuperficieCuadrado.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SuperficieCuadrado\obj\Debug\SuperficieCuadrado.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SuperficieCuadrado\obj\Debug\SuperficieCuadrado.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SuperficieCuadrado\obj\Debug\SuperficieCuadrado.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SuperficieCuadrado\obj\Debug\SuperficieCuadrado.pdb

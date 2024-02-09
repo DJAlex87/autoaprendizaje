@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CalculoSueldo\bin\Debug\CalculoSueldo.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CalculoSueldo\bin\Debug\CalculoSueldo.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CalculoSueldo\bin\Debug\CalculoSueldo.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CalculoSueldo\obj\Debug\CalculoSueldo.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CalculoSueldo\obj\Debug\CalculoSueldo.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CalculoSueldo\obj\Debug\CalculoSueldo.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CalculoSueldo\obj\Debug\CalculoSueldo.pdb

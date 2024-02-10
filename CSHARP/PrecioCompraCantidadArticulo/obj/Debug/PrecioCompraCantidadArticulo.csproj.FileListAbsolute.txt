@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PrecioCompraCantidadArticulo\bin\Debug\PrecioCompraCantidadArticulo.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PrecioCompraCantidadArticulo\bin\Debug\PrecioCompraCantidadArticulo.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PrecioCompraCantidadArticulo\bin\Debug\PrecioCompraCantidadArticulo.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PrecioCompraCantidadArticulo\obj\Debug\PrecioCompraCantidadArticulo.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PrecioCompraCantidadArticulo\obj\Debug\PrecioCompraCantidadArticulo.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PrecioCompraCantidadArticulo\obj\Debug\PrecioCompraCantidadArticulo.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PrecioCompraCantidadArticulo\obj\Debug\PrecioCompraCantidadArticulo.pdb

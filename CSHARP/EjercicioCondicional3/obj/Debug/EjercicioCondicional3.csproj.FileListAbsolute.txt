@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicional3\bin\Debug\EjercicioCondicional3.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicional3\bin\Debug\EjercicioCondicional3.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicional3\bin\Debug\EjercicioCondicional3.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicional3\obj\Debug\EjercicioCondicional3.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicional3\obj\Debug\EjercicioCondicional3.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicional3\obj\Debug\EjercicioCondicional3.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicional3\obj\Debug\EjercicioCondicional3.pdb

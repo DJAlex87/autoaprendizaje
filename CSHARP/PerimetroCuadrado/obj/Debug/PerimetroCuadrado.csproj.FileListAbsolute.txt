@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PerimetroCuadrado\bin\Debug\PerimetroCuadrado.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PerimetroCuadrado\bin\Debug\PerimetroCuadrado.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PerimetroCuadrado\bin\Debug\PerimetroCuadrado.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PerimetroCuadrado\obj\Debug\PerimetroCuadrado.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PerimetroCuadrado\obj\Debug\PerimetroCuadrado.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PerimetroCuadrado\obj\Debug\PerimetroCuadrado.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\PerimetroCuadrado\obj\Debug\PerimetroCuadrado.pdb

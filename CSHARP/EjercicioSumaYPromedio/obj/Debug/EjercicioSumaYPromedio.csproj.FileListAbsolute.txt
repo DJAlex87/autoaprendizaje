@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioSumaYPromedio\bin\Debug\EjercicioSumaYPromedio.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioSumaYPromedio\bin\Debug\EjercicioSumaYPromedio.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioSumaYPromedio\bin\Debug\EjercicioSumaYPromedio.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioSumaYPromedio\obj\Debug\EjercicioSumaYPromedio.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioSumaYPromedio\obj\Debug\EjercicioSumaYPromedio.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioSumaYPromedio\obj\Debug\EjercicioSumaYPromedio.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioSumaYPromedio\obj\Debug\EjercicioSumaYPromedio.pdb

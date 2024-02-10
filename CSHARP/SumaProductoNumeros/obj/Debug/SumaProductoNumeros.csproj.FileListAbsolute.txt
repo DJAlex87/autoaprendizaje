@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SumaProductoNumeros\bin\Debug\SumaProductoNumeros.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SumaProductoNumeros\bin\Debug\SumaProductoNumeros.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SumaProductoNumeros\bin\Debug\SumaProductoNumeros.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SumaProductoNumeros\obj\Debug\SumaProductoNumeros.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SumaProductoNumeros\obj\Debug\SumaProductoNumeros.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SumaProductoNumeros\obj\Debug\SumaProductoNumeros.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\SumaProductoNumeros\obj\Debug\SumaProductoNumeros.pdb

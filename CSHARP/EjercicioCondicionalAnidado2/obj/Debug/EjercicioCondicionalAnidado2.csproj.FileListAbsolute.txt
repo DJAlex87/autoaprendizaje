@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicionalAnidado2\bin\Debug\EjercicioCondicionalAnidado2.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicionalAnidado2\bin\Debug\EjercicioCondicionalAnidado2.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicionalAnidado2\bin\Debug\EjercicioCondicionalAnidado2.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicionalAnidado2\obj\Debug\EjercicioCondicionalAnidado2.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicionalAnidado2\obj\Debug\EjercicioCondicionalAnidado2.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicionalAnidado2\obj\Debug\EjercicioCondicionalAnidado2.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EjercicioCondicionalAnidado2\obj\Debug\EjercicioCondicionalAnidado2.pdb

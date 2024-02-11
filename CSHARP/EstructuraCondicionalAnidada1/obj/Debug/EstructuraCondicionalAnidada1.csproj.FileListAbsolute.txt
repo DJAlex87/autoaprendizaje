@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraCondicionalAnidada1\bin\Debug\EstructuraCondicionalAnidada1.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraCondicionalAnidada1\bin\Debug\EstructuraCondicionalAnidada1.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraCondicionalAnidada1\bin\Debug\EstructuraCondicionalAnidada1.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraCondicionalAnidada1\obj\Debug\EstructuraCondicionalAnidada1.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraCondicionalAnidada1\obj\Debug\EstructuraCondicionalAnidada1.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraCondicionalAnidada1\obj\Debug\EstructuraCondicionalAnidada1.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraCondicionalAnidada1\obj\Debug\EstructuraCondicionalAnidada1.pdb

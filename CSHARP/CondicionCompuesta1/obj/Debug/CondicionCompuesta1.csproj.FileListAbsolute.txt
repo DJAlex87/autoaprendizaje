@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CondicionCompuesta1\bin\Debug\CondicionCompuesta1.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CondicionCompuesta1\bin\Debug\CondicionCompuesta1.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CondicionCompuesta1\bin\Debug\CondicionCompuesta1.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CondicionCompuesta1\obj\Debug\CondicionCompuesta1.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CondicionCompuesta1\obj\Debug\CondicionCompuesta1.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CondicionCompuesta1\obj\Debug\CondicionCompuesta1.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\CondicionCompuesta1\obj\Debug\CondicionCompuesta1.pdb

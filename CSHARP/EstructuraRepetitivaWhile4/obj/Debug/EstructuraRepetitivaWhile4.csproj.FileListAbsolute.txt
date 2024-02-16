@@ -1,0 +1,7 @@
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraRepetitivaWhile4\bin\Debug\EstructuraRepetitivaWhile4.exe.config
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraRepetitivaWhile4\bin\Debug\EstructuraRepetitivaWhile4.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraRepetitivaWhile4\bin\Debug\EstructuraRepetitivaWhile4.pdb
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraRepetitivaWhile4\obj\Debug\EstructuraRepetitivaWhile4.csproj.AssemblyReference.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraRepetitivaWhile4\obj\Debug\EstructuraRepetitivaWhile4.csproj.CoreCompileInputs.cache
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraRepetitivaWhile4\obj\Debug\EstructuraRepetitivaWhile4.exe
+C:\ProyectosKevinGit\autoaprendizaje\CSHARP\EstructuraRepetitivaWhile4\obj\Debug\EstructuraRepetitivaWhile4.pdb

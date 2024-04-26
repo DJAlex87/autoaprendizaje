@@ -45,10 +45,10 @@ android {
         applicationId "com.example.repair_radar"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        //minSdkVersion flutter.minSdkVersion
-        minSdkVersion 20
-        //targetSdkVersion flutter.targetSdkVersion
-        targetSdkVersion 30
+        minSdkVersion flutter.minSdkVersion
+        //minSdkVersion 20
+        targetSdkVersion flutter.targetSdkVersion
+        //targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }

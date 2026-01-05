@@ -1,0 +1,580 @@
+CREATE DATABASE ClinicaDB;
+GO
+
+USE ClinicaDB;
+GO
+
+-- =========================
+-- 1. ROLES Y USUARIOS
+-- =========================
+
+CREATE TABLE Roles (
+    RoleId      INT IDENTITY(1,1) PRIMARY KEY,
+    Name        VARCHAR(50) NOT NULL,
+    Description VARCHAR(200) NULL
+);
+
+INSERT INTO Roles (Name, Description) VALUES
+('RecursosHumanos', 'Gestión de empleados y accesos'),
+('Administrativo', 'Gestión de pacientes y facturación'),
+('SoporteInformacion', 'Gestión inventarios e información'),
+('Enfermera', 'Registro de signos vitales y aplicaciones'),
+('Medico', 'Historia clínica y órdenes médicas');
+
+CREATE TABLE Users (
+    UserId          INT IDENTITY(1,1) PRIMARY KEY,
+    Cedula          VARCHAR(10) NOT NULL UNIQUE,
+    NombreCompleto  VARCHAR(100) NOT NULL,
+    Email           VARCHAR(100) NOT NULL,
+    Telefono        VARCHAR(10) NOT NULL,
+    FechaNacimiento DATE NOT NULL,
+    Direccion       VARCHAR(30) NOT NULL,
+    RoleId          INT NOT NULL,
+    Username        VARCHAR(15) NOT NULL UNIQUE,
+    PasswordHash    VARCHAR(200) NOT NULL,
+    CONSTRAINT FK_Users_Roles FOREIGN KEY(RoleId) REFERENCES Roles(RoleId),
+    CONSTRAINT CK_Users_Telefono_Numerico CHECK (Telefono NOT LIKE '%[^0-9]%')
+);
+GO
+
+-- =========================
+-- 2. PACIENTES Y ADMINISTRATIVO
+-- =========================
+
+CREATE TABLE Patients (
+    PatientId       INT IDENTITY(1,1) PRIMARY KEY,
+    Cedula          VARCHAR(10) NOT NULL UNIQUE,
+    NombreCompleto  VARCHAR(100) NOT NULL,
+    FechaNacimiento DATE NOT NULL,
+    Genero          VARCHAR(10) NOT NULL, -- 'Masculino','Femenino','Otro'
+    Direccion       VARCHAR(200) NOT NULL,
+    Telefono        VARCHAR(10) NOT NULL,
+    Email           VARCHAR(100) NULL,
+    CONSTRAINT CK_Patients_Telefono_Numerico CHECK (Telefono NOT LIKE '%[^0-9]%')
+);
+GO
+
+CREATE TABLE EmergencyContact (
+    EmergencyContactId INT IDENTITY(1,1) PRIMARY KEY,
+    PatientId          INT NOT NULL,
+    Nombres            VARCHAR(50) NOT NULL,
+    Apellidos          VARCHAR(50) NOT NULL,
+    Relacion           VARCHAR(50) NOT NULL,
+    Telefono           VARCHAR(10) NOT NULL,
+    CONSTRAINT FK_EmergencyContact_Patients FOREIGN KEY(PatientId) REFERENCES Patients(PatientId),
+    CONSTRAINT CK_EmergencyContact_Tel_Numerico CHECK (Telefono NOT LIKE '%[^0-9]%'),
+    CONSTRAINT UQ_EmergencyContact_Patient UNIQUE (PatientId)
+);
+GO
+
+CREATE TABLE InsurancePolicy (
+    PolicyId    INT IDENTITY(1,1) PRIMARY KEY,
+    PatientId   INT NOT NULL UNIQUE, -- una póliza por paciente
+    CompanyName VARCHAR(100) NOT NULL,
+    PolicyNumber VARCHAR(50) NOT NULL,
+    IsActive    BIT NOT NULL,
+    EndDate     DATE NOT NULL,
+    CONSTRAINT FK_InsurancePolicy_Patients FOREIGN KEY(PatientId) REFERENCES Patients(PatientId)
+);
+GO
+
+-- =========================
+-- 3. INVENTARIOS E ESPECIALIDADES
+-- =========================
+
+CREATE TABLE SpecialtyCatalog (
+    SpecialtyId INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre      VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE MedicationCatalog (
+    MedicationId INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre       VARCHAR(100) NOT NULL,
+    CostoBase    DECIMAL(12,2) NOT NULL,
+    Description  VARCHAR(500) NULL,
+    IsActive     BIT NOT NULL DEFAULT(1)
+);
+
+CREATE TABLE ProcedureCatalog (
+    ProcedureId INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre      VARCHAR(100) NOT NULL,
+    CostoBase   DECIMAL(12,2) NOT NULL
+);
+
+CREATE TABLE DiagnosticHelpCatalog (
+    DiagnosticHelpId INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre           VARCHAR(100) NOT NULL,
+    CostoBase        DECIMAL(12,2) NOT NULL
+);
+GO
+
+-- =========================
+-- 4. ÓRDENES MÉDICAS
+-- =========================
+
+CREATE TABLE Orders (
+    OrderNumber    INT PRIMARY KEY,         -- máximo 6 dígitos: lo valida la app
+    CedulaPaciente VARCHAR(10) NOT NULL,    -- FK lógica a Patients.Cedula
+    CedulaMedico   VARCHAR(10) NOT NULL,    -- FK lógica a Users.Cedula (rol Medico)
+    CreatedAt      DATETIME NOT NULL DEFAULT(GETDATE())
+);
+GO
+
+-- Medicamentos
+CREATE TABLE OrderMedication (
+    OrderNumber   INT NOT NULL,
+    ItemNumber    INT NOT NULL,
+    MedicationId  INT NOT NULL,
+    Dosis         VARCHAR(100) NOT NULL,
+    Duracion      VARCHAR(100) NOT NULL,
+    Costo         DECIMAL(12,2) NOT NULL,
+    CONSTRAINT PK_OrderMedication PRIMARY KEY (OrderNumber, ItemNumber),
+    CONSTRAINT FK_OrderMedication_Orders FOREIGN KEY(OrderNumber) REFERENCES Orders(OrderNumber),
+    CONSTRAINT FK_OrderMedication_MedCatalog FOREIGN KEY(MedicationId) REFERENCES MedicationCatalog(MedicationId)
+);
+GO
+
+-- Procedimientos
+CREATE TABLE OrderProcedure (
+    OrderNumber       INT NOT NULL,
+    ItemNumber        INT NOT NULL,
+    ProcedureId       INT NOT NULL,
+    VecesRepite       INT NOT NULL,
+    Frecuencia        VARCHAR(50) NOT NULL,
+    RequiresSpecialist BIT NOT NULL,
+    SpecialtyId       INT NULL,
+    Costo             DECIMAL(12,2) NOT NULL,
+    CONSTRAINT PK_OrderProcedure PRIMARY KEY (OrderNumber, ItemNumber),
+    CONSTRAINT FK_OrderProcedure_Orders FOREIGN KEY(OrderNumber) REFERENCES Orders(OrderNumber),
+    CONSTRAINT FK_OrderProcedure_ProcedureCatalog FOREIGN KEY(ProcedureId) REFERENCES ProcedureCatalog(ProcedureId),
+    CONSTRAINT FK_OrderProcedure_SpecialtyCatalog FOREIGN KEY(SpecialtyId) REFERENCES SpecialtyCatalog(SpecialtyId)
+);
+GO
+
+-- Ayudas diagnósticas
+CREATE TABLE OrderDiagnosticHelp (
+    OrderNumber       INT NOT NULL,
+    ItemNumber        INT NOT NULL,
+    DiagnosticHelpId  INT NOT NULL,
+    Cantidad          INT NOT NULL,
+    RequiresSpecialist BIT NOT NULL,
+    SpecialtyId       INT NULL,
+    Costo             DECIMAL(12,2) NOT NULL,
+    CONSTRAINT PK_OrderDiagnosticHelp PRIMARY KEY (OrderNumber, ItemNumber),
+    CONSTRAINT FK_OrderDiagnosticHelp_Orders FOREIGN KEY(OrderNumber) REFERENCES Orders(OrderNumber),
+    CONSTRAINT FK_OrderDiagnosticHelp_DiagCatalog FOREIGN KEY(DiagnosticHelpId) REFERENCES DiagnosticHelpCatalog(DiagnosticHelpId),
+    CONSTRAINT FK_OrderDiagnosticHelp_SpecialtyCatalog FOREIGN KEY(SpecialtyId) REFERENCES SpecialtyCatalog(SpecialtyId)
+);
+GO
+
+-- =========================
+-- 5. VISITAS DE ENFERMERÍA
+-- =========================
+
+CREATE TABLE NurseVisit (
+    VisitId        INT IDENTITY(1,1) PRIMARY KEY,
+    CedulaPaciente VARCHAR(10) NOT NULL,
+    CedulaEnfermera VARCHAR(10) NOT NULL,
+    FechaHora      DATETIME NOT NULL DEFAULT(GETDATE()),
+    PresionArterial VARCHAR(20) NOT NULL,
+    Temperatura     DECIMAL(4,1) NOT NULL,
+    Pulso           INT NOT NULL,
+    Oxigeno         INT NOT NULL,
+    Observaciones   VARCHAR(MAX) NULL,
+    OrderNumber     INT NULL,
+    ItemNumber      INT NULL,
+    CONSTRAINT FK_NurseVisit_Orders FOREIGN KEY(OrderNumber) REFERENCES Orders(OrderNumber)
+);
+GO
+
+-- =========================
+-- 6. FACTURACIÓN
+-- =========================
+
+CREATE TABLE InvoiceHeader (
+    InvoiceId         INT IDENTITY(1,1) PRIMARY KEY,
+    PatientId         INT NOT NULL,
+    CedulaMedico      VARCHAR(10) NOT NULL,
+    PolicyId          INT NULL,
+    CompanyName       VARCHAR(100) NULL,
+    PolicyNumber      VARCHAR(50) NULL,
+    PolicyEndDate     DATE NULL,
+    PolicyDaysRemaining INT NULL,
+    InvoiceDate       DATETIME NOT NULL DEFAULT(GETDATE()),
+    TotalAmount       DECIMAL(12,2) NOT NULL,
+    CopayAmount       DECIMAL(12,2) NOT NULL,
+    InsurerAmount     DECIMAL(12,2) NOT NULL,
+    [Year]            INT NOT NULL,
+    CONSTRAINT FK_InvoiceHeader_Patient FOREIGN KEY(PatientId) REFERENCES Patients(PatientId),
+    CONSTRAINT FK_InvoiceHeader_Policy FOREIGN KEY(PolicyId) REFERENCES InsurancePolicy(PolicyId)
+);
+GO
+
+CREATE TABLE InvoiceDetail (
+    InvoiceDetailId INT IDENTITY(1,1) PRIMARY KEY,
+    InvoiceId       INT NOT NULL,
+    Description     VARCHAR(200) NOT NULL,
+    Quantity        INT NOT NULL,
+    UnitCost        DECIMAL(12,2) NOT NULL,
+    LineTotal       DECIMAL(12,2) NOT NULL,
+    ItemType        VARCHAR(20) NOT NULL, -- 'Medicamento','Procedimiento','Ayuda'
+    CONSTRAINT FK_InvoiceDetail_InvoiceHeader FOREIGN KEY(InvoiceId) REFERENCES InvoiceHeader(InvoiceId)
+);
+GO
+
+
+-- =========================
+-- 7. SEMBRAR DATOS ROLES
+-- =========================
+
+-- ROLES (solo si aún no existen)
+IF NOT EXISTS (SELECT 1 FROM Roles WHERE Name = 'RecursosHumanos')
+BEGIN
+    INSERT INTO Roles (Name, Description)
+    VALUES ('RecursosHumanos', 'Gestión de empleados');
+END
+
+IF NOT EXISTS (SELECT 1 FROM Roles WHERE Name = 'Administrativo')
+BEGIN
+    INSERT INTO Roles (Name, Description)
+    VALUES ('Administrativo', 'Gestión de pacientes y facturación');
+END
+GO
+
+-- Revisar IDs
+SELECT * FROM Roles;
+
+
+-- =========================
+-- 8. SEMBRAR DATOS USUARIOS
+-- =========================
+
+-- Usuario RRHH
+IF NOT EXISTS (SELECT 1 FROM Users WHERE Username = 'rrhh')
+BEGIN
+    INSERT INTO Users
+    (Cedula, NombreCompleto, Email, Telefono, FechaNacimiento, Direccion, RoleId, Username, PasswordHash)
+    VALUES
+    ('1001', 'Admin RRHH', 'admin.rrhh@clinica.com', '1234567890',
+     '1990-01-01', 'Calle 1', 1, 'rrhh', 'Admin123!');
+END
+
+-- Usuario Administrativo
+IF NOT EXISTS (SELECT 1 FROM Users WHERE Username = 'admin')
+BEGIN
+    INSERT INTO Users
+    (Cedula, NombreCompleto, Email, Telefono, FechaNacimiento, Direccion, RoleId, Username, PasswordHash)
+    VALUES
+    ('2001', 'Admin Pacientes', 'admin.pacientes@clinica.com', '1234567890',
+     '1990-01-01', 'Calle 2', 2, 'admin', 'Admin123!');
+END
+
+-- Usuario Soporte de Información
+IF NOT EXISTS (SELECT 1 FROM Users WHERE Username = 'soporte')
+BEGIN
+    INSERT INTO Users
+    (Cedula, NombreCompleto, Email, Telefono, FechaNacimiento, Direccion, RoleId, Username, PasswordHash)
+    VALUES
+    ('3001', 'Soporte Información', 'soporte@clinica.com', '1234567890',
+     '1992-03-14', 'Sala de Sistemas', 3, 'soporte', 'Admin123!');
+END
+
+-- Usuario Enfermera
+IF NOT EXISTS (SELECT 1 FROM Users WHERE Username = 'enfermera')
+BEGIN
+    INSERT INTO Users
+    (Cedula, NombreCompleto, Email, Telefono, FechaNacimiento, Direccion, RoleId, Username, PasswordHash)
+    VALUES
+    ('4001', 'Enfermera Jefe', 'enfermera@clinica.com', '1234567890',
+     '1994-09-30', 'Área Enfermería', 4, 'enfermera', 'Admin123!');
+END
+
+-- Usuario Médico
+IF NOT EXISTS (SELECT 1 FROM Users WHERE Username = 'medico')
+BEGIN
+    INSERT INTO Users
+    (Cedula, NombreCompleto, Email, Telefono, FechaNacimiento, Direccion, RoleId, Username, PasswordHash)
+    VALUES
+    ('5001', 'Dr. Juan Pérez', 'medico@clinica.com', '1234567890',
+     '1980-11-18', 'Consultorio 101', 5, 'medico', 'Admin123!');
+END
+GO
+
+SELECT * FROM Users;
+
+/* ==========================================
+   1. CATÁLOGOS (ESPECIALIDADES, MEDICAMENTOS, ETC.)
+========================================== */
+
+-- ESPECIALIDADES
+INSERT INTO SpecialtyCatalog (Nombre) VALUES
+('Medicina General'),
+('Pediatría'),
+('Cardiología'),
+('Radiología'),
+('Laboratorio Clínico');
+
+-- MEDICAMENTOS  (OJO: Nombre + CostoBase)
+INSERT INTO MedicationCatalog (Nombre, Description, CostoBase, IsActive) VALUES
+('Paracetamol 500mg', 'Analgésico y antipirético', 1500.00, 1),
+('Ibuprofeno 400mg', 'Antiinflamatorio no esteroideo', 2000.00, 1),
+('Amoxicilina 500mg', 'Antibiótico de amplio espectro', 3500.00, 1),
+('Omeprazol 20mg', 'Inhibidor de bomba de protones', 2500.00, 1),
+('Solución salina 0.9%', 'Solución intravenosa', 1200.00, 1);
+
+-- PROCEDIMIENTOS
+INSERT INTO ProcedureCatalog (Nombre, CostoBase) VALUES
+('Consulta externa', 60000.00),
+('Curación menor', 80000.00),
+('Sutura simple', 120000.00),
+('Nebulización', 50000.00);
+
+-- AYUDAS DIAGNÓSTICAS
+INSERT INTO DiagnosticHelpCatalog (Nombre, CostoBase) VALUES
+('Radiografía de tórax', 90000.00),
+('Hemograma completo', 45000.00),
+('Electrocardiograma', 70000.00),
+('Ecografía abdominal', 110000.00);
+GO
+
+
+/* ==========================================
+   2. PACIENTES, CONTACTOS Y PÓLIZAS
+========================================== */
+
+-- PACIENTES
+INSERT INTO Patients (Cedula, NombreCompleto, FechaNacimiento, Genero, Direccion, Telefono, Email) VALUES
+('9001', 'Carlos Andrés López', '1985-02-10', 'Masculino', 'Calle 10 #5-20', '3001234567', 'carlos.lopez@paciente.com'),
+('9002', 'María Fernanda Ruiz', '1990-07-25', 'Femenino', 'Carrera 45 #12-30', '3012345678', 'maria.ruiz@paciente.com'),
+('9003', 'Juan Sebastián Gómez', '1978-11-03', 'Masculino', 'Av. 80 #50-10', '3023456789', 'juan.gomez@paciente.com');
+GO
+
+-- CONTACTOS DE EMERGENCIA (uno por paciente)
+INSERT INTO EmergencyContact (PatientId, Nombres, Apellidos, Relacion, Telefono)
+VALUES
+((SELECT PatientId FROM Patients WHERE Cedula = '9001'), 'Ana María', 'López Pérez', 'Esposa', '3101112233'),
+((SELECT PatientId FROM Patients WHERE Cedula = '9002'), 'Luis Alberto', 'Ruiz Gómez', 'Padre', '3102223344'),
+((SELECT PatientId FROM Patients WHERE Cedula = '9003'), 'Claudia Patricia', 'Gómez Ríos', 'Hermana', '3103334455');
+GO
+
+-- PÓLIZAS (uno a uno con algunos pacientes)
+INSERT INTO InsurancePolicy (PatientId, CompanyName, PolicyNumber, IsActive, EndDate)
+VALUES
+((SELECT PatientId FROM Patients WHERE Cedula = '9001'), 'Sura EPS', 'POL-001', 1, '2025-12-31'),
+((SELECT PatientId FROM Patients WHERE Cedula = '9002'), 'Coomeva EPS', 'POL-002', 1, '2025-06-30');
+-- Paciente 9003 queda sin póliza
+GO
+
+
+/* ==========================================
+   3. ÓRDENES MÉDICAS + DETALLE
+========================================== */
+
+-- ÓRDENES (usa cedulas de pacientes y del médico usuario 'medico' -> Cedula = '5001')
+INSERT INTO Orders (OrderNumber, CedulaPaciente, CedulaMedico, CreatedAt) VALUES
+(100001, '9001', '5001', '2025-01-15T09:30:00'),
+(100002, '9002', '5001', '2025-02-10T10:15:00'),
+(100003, '9003', '5001', '2025-03-05T14:45:00');
+GO
+
+-- MEDICAMENTOS EN LA ORDEN
+INSERT INTO OrderMedication (OrderNumber, ItemNumber, MedicationId, Dosis, Duracion, Costo)
+VALUES
+-- Orden 100001 (Paciente 9001)
+(100001, 1, (SELECT MedicationId FROM MedicationCatalog WHERE Nombre = 'Paracetamol 500mg'),
+ '500mg cada 8 horas', '5 días', 15000.00),
+
+-- Orden 100002 (Paciente 9002)
+(100002, 1, (SELECT MedicationId FROM MedicationCatalog WHERE Nombre = 'Amoxicilina 500mg'),
+ '500mg cada 8 horas', '7 días', 24500.00),
+
+-- Orden 100003 (Paciente 9003)
+(100003, 1, (SELECT MedicationId FROM MedicationCatalog WHERE Nombre = 'Ibuprofeno 400mg'),
+ '400mg cada 8 horas', '5 días', 30000.00);
+GO
+
+-- PROCEDIMIENTOS EN LA ORDEN
+INSERT INTO OrderProcedure (OrderNumber, ItemNumber, ProcedureId, VecesRepite, Frecuencia, RequiresSpecialist, SpecialtyId, Costo)
+VALUES
+-- Orden 100001: Consulta externa
+(100001, 1, (SELECT ProcedureId FROM ProcedureCatalog WHERE Nombre = 'Consulta externa'),
+ 1, 'Única', 0, NULL, 60000.00),
+
+-- Orden 100002: Sutura simple (requiere especialista general)
+(100002, 1, (SELECT ProcedureId FROM ProcedureCatalog WHERE Nombre = 'Sutura simple'),
+ 1, 'Única', 1, (SELECT SpecialtyId FROM SpecialtyCatalog WHERE Nombre = 'Medicina General'), 120000.00),
+
+-- Orden 100003: Nebulización (no requiere especialista)
+(100003, 1, (SELECT ProcedureId FROM ProcedureCatalog WHERE Nombre = 'Nebulización'),
+ 1, 'Cada 8 horas por 1 día', 0, NULL, 50000.00);
+GO
+
+-- AYUDAS DIAGNÓSTICAS EN LA ORDEN
+INSERT INTO OrderDiagnosticHelp (OrderNumber, ItemNumber, DiagnosticHelpId, Cantidad, RequiresSpecialist, SpecialtyId, Costo)
+VALUES
+-- Orden 100001: Radiografía de tórax
+(100001, 1, (SELECT DiagnosticHelpId FROM DiagnosticHelpCatalog WHERE Nombre = 'Radiografía de tórax'),
+ 1, 1, (SELECT SpecialtyId FROM SpecialtyCatalog WHERE Nombre = 'Radiología'), 90000.00),
+
+-- Orden 100002: Hemograma completo y Electrocardiograma
+(100002, 1, (SELECT DiagnosticHelpId FROM DiagnosticHelpCatalog WHERE Nombre = 'Hemograma completo'),
+ 1, 1, (SELECT SpecialtyId FROM SpecialtyCatalog WHERE Nombre = 'Laboratorio Clínico'), 45000.00),
+(100002, 2, (SELECT DiagnosticHelpId FROM DiagnosticHelpCatalog WHERE Nombre = 'Electrocardiograma'),
+ 1, 1, (SELECT SpecialtyId FROM SpecialtyCatalog WHERE Nombre = 'Cardiología'), 70000.00);
+GO
+
+
+/* ==========================================
+   4. VISITAS DE ENFERMERÍA
+========================================== */
+
+INSERT INTO NurseVisit
+(CedulaPaciente, CedulaEnfermera, FechaHora, PresionArterial, Temperatura, Pulso, Oxigeno, Observaciones, OrderNumber, ItemNumber)
+VALUES
+-- Paciente 9001, asociado a orden 100001
+('9001', '4001', '2025-01-15T10:00:00', '120/80', 37.2, 78, 98,
+ 'Paciente estable, sin dolor aparente.', 100001, 1),
+
+-- Paciente 9002, asociado a orden 100002
+('9002', '4001', '2025-02-10T11:00:00', '130/85', 37.5, 82, 97,
+ 'Herida en proceso de cicatrización. Refiere dolor leve.', 100002, 1),
+
+-- Paciente 9003, visita sin orden asociada
+('9003', '4001', '2025-03-05T15:00:00', '110/70', 36.8, 72, 99,
+ 'Paciente refiere dificultad leve para respirar. Se indica nebulización.', NULL, NULL);
+GO
+
+
+/* ==========================================
+   5. FACTURACIÓN (HEADER + DETAIL)
+========================================== */
+
+DECLARE @Inv1 INT, @Inv2 INT, @Inv3 INT;
+
+-- FACTURA 1 - Paciente 9001 (Sura EPS)
+INSERT INTO InvoiceHeader
+(
+    PatientId,
+    CedulaMedico,
+    PolicyId,
+    CompanyName,
+    PolicyNumber,
+    PolicyEndDate,
+    PolicyDaysRemaining,
+    InvoiceDate,
+    TotalAmount,
+    CopayAmount,
+    InsurerAmount,
+    [Year]
+)
+VALUES
+(
+    (SELECT PatientId FROM Patients WHERE Cedula = '9001'),
+    '5001',
+    (SELECT PolicyId FROM InsurancePolicy WHERE PolicyNumber = 'POL-001'),
+    'Sura EPS',
+    'POL-001',
+    '2025-12-31',
+    350,
+    '2025-01-15T11:00:00',
+    165000.00,
+    33000.00,
+    132000.00,
+    2025
+);
+
+SET @Inv1 = SCOPE_IDENTITY();
+
+INSERT INTO InvoiceDetail (InvoiceId, Description, Quantity, UnitCost, LineTotal, ItemType)
+VALUES
+(@Inv1, 'Paracetamol 500mg', 10, 1500.00, 15000.00, 'Medicamento'),
+(@Inv1, 'Consulta externa', 1, 60000.00, 60000.00, 'Procedimiento'),
+(@Inv1, 'Radiografía de tórax', 1, 90000.00, 90000.00, 'Ayuda');
+
+
+-- FACTURA 2 - Paciente 9002 (Coomeva EPS)
+INSERT INTO InvoiceHeader
+(
+    PatientId,
+    CedulaMedico,
+    PolicyId,
+    CompanyName,
+    PolicyNumber,
+    PolicyEndDate,
+    PolicyDaysRemaining,
+    InvoiceDate,
+    TotalAmount,
+    CopayAmount,
+    InsurerAmount,
+    [Year]
+)
+VALUES
+(
+    (SELECT PatientId FROM Patients WHERE Cedula = '9002'),
+    '5001',
+    (SELECT PolicyId FROM InsurancePolicy WHERE PolicyNumber = 'POL-002'),
+    'Coomeva EPS',
+    'POL-002',
+    '2025-06-30',
+    140,
+    '2025-02-10T12:00:00',
+    235000.00,
+    47000.00,
+    188000.00,
+    2025
+);
+
+SET @Inv2 = SCOPE_IDENTITY();
+
+INSERT INTO InvoiceDetail (InvoiceId, Description, Quantity, UnitCost, LineTotal, ItemType)
+VALUES
+(@Inv2, 'Sutura simple', 1, 120000.00, 120000.00, 'Procedimiento'),
+(@Inv2, 'Hemograma completo', 1, 45000.00, 45000.00, 'Ayuda'),
+(@Inv2, 'Electrocardiograma', 1, 70000.00, 70000.00, 'Ayuda');
+
+
+-- FACTURA 3 - Paciente 9003 (particular, sin póliza)
+INSERT INTO InvoiceHeader
+(
+    PatientId,
+    CedulaMedico,
+    PolicyId,
+    CompanyName,
+    PolicyNumber,
+    PolicyEndDate,
+    PolicyDaysRemaining,
+    InvoiceDate,
+    TotalAmount,
+    CopayAmount,
+    InsurerAmount,
+    [Year]
+)
+VALUES
+(
+    (SELECT PatientId FROM Patients WHERE Cedula = '9003'),
+    '5001',
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    '2025-03-05T16:00:00',
+    80000.00,
+    80000.00,
+    0.00,
+    2025
+);
+
+SET @Inv3 = SCOPE_IDENTITY();
+
+INSERT INTO InvoiceDetail (InvoiceId, Description, Quantity, UnitCost, LineTotal, ItemType)
+VALUES
+(@Inv3, 'Ibuprofeno 400mg', 15, 2000.00, 30000.00, 'Medicamento'),
+(@Inv3, 'Nebulización', 1, 50000.00, 50000.00, 'Procedimiento');
+GO
+
+
+ALTER TABLE dbo.InvoiceHeader
+ALTER COLUMN PolicyDaysRemaining INT NULL;
+
+

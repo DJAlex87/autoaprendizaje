@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="infraestructure\GUI\BillingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\ClinicalHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\DiagnosticHelpCatalogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\InvoiceListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\MedicationCatalogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\NursingVisitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\PatientManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\ProcedureCatalogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\SpecialtyCatalogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infraestructure\GUI\UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

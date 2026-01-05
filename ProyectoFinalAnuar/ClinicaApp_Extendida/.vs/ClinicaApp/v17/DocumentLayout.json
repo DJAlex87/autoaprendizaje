@@ -1,0 +1,452 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\invoicelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\invoicelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\billingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\billingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\persistence\\invoicerepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\persistence\\invoicerepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\billingform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\billingform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\application\\usecases\\billingusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:application\\usecases\\billingusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\persistence\\clinicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\persistence\\clinicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\domain\\model\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:domain\\model\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\domain\\model\\invoiceheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:domain\\model\\invoiceheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\invoicelistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\invoicelistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\gui\\invoicelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\invoicelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\persistence\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\persistence\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\domain\\ports\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:domain\\ports\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\patientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\patientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\patientmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\patientmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\clinicalhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\clinicalhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\clinicalhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\clinicalhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\gui\\clinicalhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\clinicalhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\application\\usecases\\clinicalhistoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:application\\usecases\\clinicalhistoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\persistence\\jsonclinicalhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\persistence\\jsonclinicalhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\domain\\ports\\iclinicalhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:domain\\ports\\iclinicalhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\domain\\model\\clinicalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:domain\\model\\clinicalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\diagnostichelpcatalogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\diagnostichelpcatalogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\procedurecatalogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\procedurecatalogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|c:\\users\\administrador\\desktop\\anuar\\proyecto\\clinicaapp_extendida\\infraestructure\\gui\\specialtycatalogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B1CB7C-EAB7-94F3-7E9E-03E8BE53601D}|ClinicaApp.csproj|solutionrelative:infraestructure\\gui\\specialtycatalogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BillingForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\BillingForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\BillingForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\BillingForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\BillingForm.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAwwN0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:03:26.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BillingUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\application\\usecases\\BillingUseCase.cs",
+              "RelativeDocumentMoniker": "application\\usecases\\BillingUseCase.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\application\\usecases\\BillingUseCase.cs",
+              "RelativeToolTip": "application\\usecases\\BillingUseCase.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAwwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T06:59:51.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClinicDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\ClinicDbContext.cs",
+              "RelativeDocumentMoniker": "infraestructure\\Persistence\\ClinicDbContext.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\ClinicDbContext.cs",
+              "RelativeToolTip": "infraestructure\\Persistence\\ClinicDbContext.cs",
+              "ViewState": "AgIAAFkBAAAAAAAAAAAwwG4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T02:50:02.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoiceListForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\InvoiceListForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\InvoiceListForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\InvoiceListForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\InvoiceListForm.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAuwJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:59:38.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoiceRepositoryEF.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\InvoiceRepositoryEF.cs",
+              "RelativeDocumentMoniker": "infraestructure\\Persistence\\InvoiceRepositoryEF.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\InvoiceRepositoryEF.cs",
+              "RelativeToolTip": "infraestructure\\Persistence\\InvoiceRepositoryEF.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAowEcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T06:58:23.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BillingForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\BillingForm.Designer.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\BillingForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\BillingForm.Designer.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\BillingForm.Designer.cs",
+              "ViewState": "AgIAADMBAAAAAAAAAAAcwEYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:11:53.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InvoiceDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\model\\InvoiceDetail.cs",
+              "RelativeDocumentMoniker": "domain\\model\\InvoiceDetail.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\model\\InvoiceDetail.cs",
+              "RelativeToolTip": "domain\\model\\InvoiceDetail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T04:39:59.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvoiceHeader.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\model\\InvoiceHeader.cs",
+              "RelativeDocumentMoniker": "domain\\model\\InvoiceHeader.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\model\\InvoiceHeader.cs",
+              "RelativeToolTip": "domain\\model\\InvoiceHeader.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA6wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T18:51:08.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InvoiceListForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\InvoiceListForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\InvoiceListForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\InvoiceListForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infraestructure\\GUI\\InvoiceListForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:59:33.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InvoiceListForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\InvoiceListForm.Designer.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\InvoiceListForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\InvoiceListForm.Designer.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\InvoiceListForm.Designer.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAuwKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T03:00:12.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PatientManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\PatientManagementForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\PatientManagementForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\PatientManagementForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\PatientManagementForm.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAuwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T01:02:21.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceLocator.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\ServiceLocator.cs",
+              "RelativeDocumentMoniker": "infraestructure\\Persistence\\ServiceLocator.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\ServiceLocator.cs",
+              "RelativeToolTip": "infraestructure\\Persistence\\ServiceLocator.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAgwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T03:01:52.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IInvoiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\ports\\IInvoiceRepository.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\IInvoiceRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\ports\\IInvoiceRepository.cs",
+              "RelativeToolTip": "domain\\ports\\IInvoiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T06:57:37.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T03:03:21.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PatientManagementForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\PatientManagementForm.Designer.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\PatientManagementForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\PatientManagementForm.Designer.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\PatientManagementForm.Designer.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T00:57:46.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\MainForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\MainForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\MainForm.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAuwJYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T03:32:23.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClinicalHistoryForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ClinicalHistoryForm.Designer.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\ClinicalHistoryForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ClinicalHistoryForm.Designer.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\ClinicalHistoryForm.Designer.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAgwMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T03:25:58.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClinicalHistoryForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ClinicalHistoryForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\ClinicalHistoryForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ClinicalHistoryForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\ClinicalHistoryForm.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T03:25:33.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClinicalHistoryForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ClinicalHistoryForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\ClinicalHistoryForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ClinicalHistoryForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infraestructure\\GUI\\ClinicalHistoryForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T03:25:21.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClinicalHistoryUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\application\\usecases\\ClinicalHistoryUseCase.cs",
+              "RelativeDocumentMoniker": "application\\usecases\\ClinicalHistoryUseCase.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\application\\usecases\\ClinicalHistoryUseCase.cs",
+              "RelativeToolTip": "application\\usecases\\ClinicalHistoryUseCase.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T03:01:10.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "JsonClinicalHistoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\JsonClinicalHistoryRepository.cs",
+              "RelativeDocumentMoniker": "infraestructure\\Persistence\\JsonClinicalHistoryRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\Persistence\\JsonClinicalHistoryRepository.cs",
+              "RelativeToolTip": "infraestructure\\Persistence\\JsonClinicalHistoryRepository.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:59:31.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IClinicalHistoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\ports\\IClinicalHistoryRepository.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\IClinicalHistoryRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\ports\\IClinicalHistoryRepository.cs",
+              "RelativeToolTip": "domain\\ports\\IClinicalHistoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:58:45.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ClinicalHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\model\\ClinicalHistory.cs",
+              "RelativeDocumentMoniker": "domain\\model\\ClinicalHistory.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\domain\\model\\ClinicalHistory.cs",
+              "RelativeToolTip": "domain\\model\\ClinicalHistory.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:58:05.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DiagnosticHelpCatalogForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\DiagnosticHelpCatalogForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\DiagnosticHelpCatalogForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\DiagnosticHelpCatalogForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\DiagnosticHelpCatalogForm.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:28:02.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\UserManagementForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\UserManagementForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\UserManagementForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\UserManagementForm.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:10:01.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SpecialtyCatalogForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\SpecialtyCatalogForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\SpecialtyCatalogForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\SpecialtyCatalogForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\SpecialtyCatalogForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:09:50.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProcedureCatalogForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ProcedureCatalogForm.cs",
+              "RelativeDocumentMoniker": "infraestructure\\GUI\\ProcedureCatalogForm.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\ANUAR\\PROYECTO\\ClinicaApp_Extendida\\infraestructure\\GUI\\ProcedureCatalogForm.cs",
+              "RelativeToolTip": "infraestructure\\GUI\\ProcedureCatalogForm.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAgwJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:09:42.232Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
